@@ -109,6 +109,8 @@ Typical workflow:
 6. Generate 3D geometry using extrusion, revolve, loft or sweep
 7. Export the resulting geometry as STL
 
+For a more detailed explanation, see [Architecture Documentation](docs/architecture.md).
+
 \## Technologies
 
 
