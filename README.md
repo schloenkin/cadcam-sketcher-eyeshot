@@ -36,7 +36,31 @@ This project is a C# WinForms prototype for creating custom 3D geometry based on
 
 \- Layer-based scene organization in Eyeshot
 
+## Screenshots
 
+### Points Editor
+![Points Editor](docs/images/main-points-editor.png)
+
+### Contour Editor
+![Contour Editor](docs/images/contour-editor.png)
+
+### Region Editor
+![Region Editor](docs/images/region-editor.png)
+
+### Extrusion Result
+![Extrusion Result](docs/images/extrusion-result.png)
+
+### Revolve Result
+![Revolve Result](docs/images/revolve-result.png)
+
+### Loft Result
+![Loft Result](docs/images/loft-result.png)
+
+### Sweep Result
+
+The sweep function is currently implemented as a prototype and is still being tested.
+
+![Sweep Result](docs/images/sweep-result.png)
 
 \## Technologies
 
