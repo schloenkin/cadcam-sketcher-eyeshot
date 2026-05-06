@@ -62,6 +62,53 @@ The sweep function is currently implemented as a prototype and is still being te
 
 ![Sweep Result](docs/images/sweep-result.png)
 
+## Architecture
+
+The application separates geometry-processing logic from UI and scene-management logic.
+
+### Main components
+
+- **Form1**
+  - Handles the WinForms user interface
+  - Processes user actions and button events
+  - Manages the Eyeshot viewport and scene updates
+  - Adds, removes and updates entities in the model
+  - Assigns colors, line weights and layers to visible objects
+
+- **SketcherHelper**
+  - Stores and processes sketch-related geometry
+  - Manages points, contours and regions
+  - Builds auxiliary lines and point labels
+  - Creates regions from closed contours
+  - Performs boolean operations on regions such as union, intersection and difference
+
+### Scene structure
+
+The Eyeshot `Model` control is used as the main 3D scene.
+
+Entities are organized by layers:
+
+- `AuxiliaryLayer`
+- `ContourLayer`
+- `RegionLayer`
+- `DimLayer`
+- `MeshLayer`
+- `SplineLayer`
+
+This layer-based structure makes it easier to manage visibility, styling and editing behavior.
+
+### Geometry workflow
+
+Typical workflow:
+
+1. Create points
+2. Build a contour from the points
+3. Close and save the contour
+4. Convert the contour into a region
+5. Apply boolean region operations if required
+6. Generate 3D geometry using extrusion, revolve, loft or sweep
+7. Export the resulting geometry as STL
+
 \## Technologies
 
 
