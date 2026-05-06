@@ -140,6 +140,39 @@ The project separates geometry logic from scene and UI logic.
 \- `Form1` handles user interaction, Eyeshot viewport events, layer assignment, entity display and scene updates.
 
 
+## Build Requirements
+
+To build and run this project, the following components are required:
+
+- Windows
+- Visual Studio 2022
+- .NET Framework 4.8
+- devDept Eyeshot
+- A valid local Eyeshot license
+
+This repository does not include commercial Eyeshot binaries, license files or license keys.
+
+## How to Run
+
+1. Clone the repository:
+
+   `git clone https://github.com/schloenkin/cadcam-sketcher-eyeshot.git`
+
+2. Open the solution file in Visual Studio:
+
+   `Sketcher.sln`
+
+3. Make sure that devDept Eyeshot is installed and available locally.
+
+4. Add or configure your local Eyeshot license according to your own licensed installation.
+
+5. Build and run the project in Visual Studio.
+
+## Notes on Eyeshot
+
+The project was developed with devDept Eyeshot as the CAD/CAM visualization and geometry-processing library.
+
+Because Eyeshot is a commercial third-party component, this public repository only contains the application source code, documentation and screenshots.
 
 \## License Notice
 
